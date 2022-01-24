@@ -75,3 +75,8 @@ header {
 .full-screen {
     height: 80vh;
 }
+
+br {
+    width: 100vw;
+    margin: 1rem;
+}
