@@ -75,3 +75,7 @@ header {
 .full-screen {
     height: 80vh;
 }
+
+.show-overflow {
+    overflow: visible;
+}
