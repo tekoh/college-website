@@ -69,12 +69,9 @@ header {
     font-size: 2rem;
     text-align: center;
     margin: 1rem;
+    width: 100%;
 }
 
-.full-height {
-    min-height: 100%;
-}
-
-.d {
-    height: 20rem;
+.full-screen {
+    height: 80vh;
 }
