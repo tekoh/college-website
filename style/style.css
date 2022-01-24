@@ -71,6 +71,10 @@ header {
     margin: 1rem;
 }
 
-/* .full-height {
+.full-height {
     min-height: 100%;
-} */
+}
+
+.d {
+    height: 20rem;
+}
