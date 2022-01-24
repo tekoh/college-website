@@ -84,3 +84,12 @@ header {
     color: aqua;
     text-decoration: underline;
 }
+
+.subtitle {
+    font-size: 3rem;
+
+}
+
+.red {
+    color: red;
+}
