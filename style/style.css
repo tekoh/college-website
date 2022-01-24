@@ -41,7 +41,7 @@ header {
     order: 3;
 }
 
-.title .title a {
+.title {
     font-family: "Roboto Mono", monospace;
     font-size: 4rem;
     font-weight: 300;
