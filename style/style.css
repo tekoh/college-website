@@ -87,9 +87,16 @@ header {
 
 .subtitle {
     font-size: 3rem;
-
+    font-family: 'Roboto';
 }
 
 .red {
     color: red;
+}
+
+.sign-up {
+    font-family: "Roboto";
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
 }
