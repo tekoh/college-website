@@ -10,8 +10,11 @@
 
 header {
     background-color: rgb(83, 123, 255);
-    display: flex;
     padding: 2rem;
+}
+
+.flex {
+    display: flex;
 }
 
 .left {
@@ -50,4 +53,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.intro-text {
+    font-family: 'Roboto';
+    font-size: 1rem;
 }
