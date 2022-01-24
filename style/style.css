@@ -68,6 +68,7 @@ header {
     font-family: 'Roboto';
     font-size: 2rem;
     text-align: center;
+    margin: 1rem;
 }
 
 .full-height {
