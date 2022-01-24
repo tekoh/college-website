@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+body {
+    min-height: 100%;
+    min-width: 100%;
+}
+
 header {
     background-color: rgb(83, 123, 255);
     padding: 2rem;
@@ -57,5 +62,5 @@ header {
 
 .intro-text {
     font-family: 'Roboto';
-    font-size: 1rem;
+    font-size: 2rem;
 }
