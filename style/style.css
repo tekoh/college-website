@@ -79,3 +79,8 @@ header {
 .show-overflow {
     overflow: visible;
 }
+
+.inline-link {
+    color: aqua;
+    text-decoration: underline;
+}
