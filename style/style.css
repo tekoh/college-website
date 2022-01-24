@@ -100,3 +100,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+.sign-up div {
+    margin: 1.5rem;
+}
