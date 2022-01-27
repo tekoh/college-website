@@ -26,49 +26,105 @@
         </div>
     </header>
 
-    <main class="flex full-screen">
+    <main class="flex">
         <div class="left"></div>
 
         <div class="center">
 
             <h1 class="subtitle">sign up for the public beta</h1>
 
-            <form class="sign-up">
+            <form class="sign-up" onsubmit="submitForm()">
                 <div class="name-and-email">
                     <h2>name & email</h2>
+
+                    <div class="flex-container sign-up-container">
+                        <div class="left">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="full_name">Full Name <span class="red">*</span></label>
+                                </div>
+                                <div class="right">
+                                    <input type="text" id="full_name" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="email">Email <span class="red">*</span></label>
+                                </div>
+                                <div class="right">
+                                    <input id="email" type="email" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <h2>address</h2>
+
+                    <div class="flex-container sign-up-container">
+                        <div class="left">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="address_1">Address line 1</label>
+                                </div>
+                                <div class="right">
+                                    <input id="address_1" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="address_2">Address line 2</label>
+                                </div>
+                                <div class="right">
+                                    <input id="address_2" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-container sign-up-container">
+                        <div class="left">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="city">City</label>
+                                </div>
+                                <div class="right">
+                                    <input id="city" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="flex-container column center-children">
+                                <div class="left">
+                                    <label for="county">County</label>
+                                </div>
+                                <div class="right">
+                                    <input id="county" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Use case <span class="red">*</span></h2>
+
+                    <div class="center-children column" style="width: 100%;">
+                        <textarea id="use_case" type="text" required></textarea>
+
+                        <br>
+
+                        <input type="submit">
+                    </div>
+
+
+
                 </div>
             </form>
-
-            <!-- <form class="sign-up">
-                <div>
-                    <label for="full_name">Full Name<span class="red">*</span></label>
-                    <input id="full_name" type="text">
-
-                    <label for="email">Email<span class="red">*</span></label>
-                    <input id="email" type="email">
-                </div>
-
-                <div>
-                    <label for="address_1">Address line 1</label>
-                    <input id="address_1" type="text">
-
-                    <label for="address_2">Address line 2</label>
-                    <input id="address_2" type="text">
-                </div>
-
-                <div>
-                    <label for="city">City</label>
-                    <input id="city" type="text">
-
-                    <label for="county">County</label>
-                    <input id="county" type="text">
-                </div>
-
-                <div>
-                    <label for="use_case">Use case<span class="red">*</span></label>
-                    <textarea id="use_case" type="text"></textarea>
-                </div>
-            </form> -->
 
         </div>
 
@@ -78,3 +134,26 @@
 </body>
 
 </html>
+
+<!-- <div class="flex-container">
+    <div class="left">
+        <div class="flex-container column center-children">
+            <div class="left">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="flex-container column center-children">
+            <div class="left">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+    </div>
+</div> -->

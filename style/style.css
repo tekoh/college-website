@@ -8,13 +8,9 @@
     scroll-behavior: smooth;
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    min-height: 100%;
-    min-width: 100%;
+    /* min-height: 100%;
+    min-width: 100%; */
     background-color: #1c1e26;
 }
 
@@ -92,6 +88,9 @@ header {
     font-size: 3rem;
     font-family: 'Roboto';
     text-align: center;
+    color: #BBBBBB;
+    font-weight: 300;
+    margin: 2rem
 }
 
 .red {
@@ -99,8 +98,56 @@ header {
 }
 
 .sign-up {
-    font-family: "Roboto";
+    font-family: "Roboto Mono";
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+    min-width: 100px;
+    margin: 2rem;
+    color: #BBBBBB;
+    overflow: visible;
+}
+
+.sign-up h2 {
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+input, textarea {
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Roboto Mono';
+    border: 2px solid #1c1e26;
+    padding: 0.3rem;
+    transition: 0.5s ease-out;
+    background-color: rgb(20, 21, 28);
+    color: #BBBBBB;
+    border-radius: 0.5rem;
+}
+
+textarea {
+    min-width: 50%;
+    min-height: 40%;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid #ff5656;
+}
+
+hr {
+    border: 1px solid #181920;
+    margin: 3rem;
+}
+
+.sign-up-container {
+    margin: 1rem;
 }
