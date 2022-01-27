@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-    <script src="script/script.js"></script>
 </head>
 
 <body>
@@ -33,7 +32,9 @@
 
             <h1 class="subtitle">sign up for the public beta</h1>
 
-            <form class="sign-up" onsubmit="submitForm()">
+            <script src="script/script.js"></script>
+
+            <form action="/confirmation.html" class="sign-up" onsubmit="hey(event)">
                 <div class="name-and-email">
                     <h2>name & email</h2>
 

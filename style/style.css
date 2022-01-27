@@ -151,3 +151,11 @@ hr {
 .sign-up-container {
     margin: 1rem;
 }
+
+.confirmation-message {
+    font-size: 2rem;
+    font-family: "Roboto Mono";
+    font-weight: 300;
+    text-align: center;
+    color: #BBBBBB;
+}
