@@ -44,14 +44,14 @@ header {
     font-size: 4rem;
     font-weight: 300;
     text-align: center;
-    color: white;
+    color: #bbbbbb;
     text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .nav-link {
     font-family: "Roboto Mono", monospace;
     font-size: 2rem;
-    color: white;
+    color: #bbbbbb;
     text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.2);
     text-align: center;
 }
