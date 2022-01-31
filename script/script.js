@@ -20,10 +20,10 @@ $(window).on("load", () => {
 
     if (!$("#countdown-text")[0]) return
 
-    console.log(new Date(Date.parse("25/05/2022")))
+    console.log(new Date(Date.parse("05/25/2022")))
 
     const countdown = () => {
-        $("#countdown-text")[0].innerText = `${MStoTime(new Date(Date.parse("25/05/2022")).getTime() - Date.now())} until shop opening!`
+        $("#countdown-text")[0].innerText = `${MStoTime(new Date(Date.parse("05/25/2022")).getTime() - Date.now())} until shop opening!`
     }
 
     countdown()
