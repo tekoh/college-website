@@ -147,8 +147,6 @@ const cards = [
 ]
 
 $(window).on("load", function () {
-    $("body").removeClass("preload")
-
     const d = cards.length
 
     for (let i = 0; i < d; i++) {
