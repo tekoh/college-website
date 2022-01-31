@@ -17,10 +17,6 @@ body {
     height: 150vh;
 }
 
-main {
-    overflow: scroll;
-}
-
 header {
     background-color: #181920;
     padding: 2rem;
@@ -236,7 +232,7 @@ hr {
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
     padding: 0.75rem;
     border-radius: 0.7rem;
-    background-color: var(--bg-color-two);
+    background-color: #181920;
     max-width: 25%;
     margin: 1rem;
 }
