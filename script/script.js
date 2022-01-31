@@ -120,7 +120,7 @@ function update() {
     let sorted
 
     if (selected == 2) {
-        sorted = products.sort((a, b) => a - b)
+        sorted = products.sort((a, b) => a.cost - b.cost)
     }
 
     console.log(sorted)
