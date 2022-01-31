@@ -14,7 +14,7 @@ body {
     /* min-height: 100%;
     min-width: 100%; */
     background-color: #1c1e26;
-    height: 120vh;
+    height: 150vh;
 }
 
 main {
@@ -238,7 +238,7 @@ hr {
     border-radius: 0.7rem;
     background-color: var(--bg-color-two);
     max-width: 25%;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .card h1 {
