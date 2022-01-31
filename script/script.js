@@ -156,6 +156,6 @@ $(window).on("load", function () {
 
         cards.splice(cards.indexOf(chosen), 1)
 
-        $(".row").append(chosen)
+        $(".products").append(chosen)
     }
 })
