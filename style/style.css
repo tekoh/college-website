@@ -103,11 +103,6 @@ header {
     margin: 2rem
 }
 
-.subtitle h2 {
-    margin: 0rem !important;
-    display: block;
-}
-
 .red {
     color: red;
 }
@@ -227,6 +222,7 @@ hr {
     flex-flow: wrap;
     align-items: flex-start;
 
+    margin-top: 1rem;
     padding: 1rem;
 }
 
