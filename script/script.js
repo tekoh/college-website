@@ -115,6 +115,7 @@ function createCard(cardData) {
 }
 
 function update() {
+    $(".products").innerHtml = ""
     const selected = $("#sort-by").val()
 
     console.log(selected)
