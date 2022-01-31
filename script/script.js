@@ -110,6 +110,8 @@ function createCard(cardData) {
     }
 
     card += "</div>"
+
+    return card
 }
 
 function update() {
@@ -119,6 +121,12 @@ function update() {
 
     if (selected == 2) {
         products.sort((a, b) => a.cost - b.cost)
+    } else if (selected == 3) {
+        products.sort((a, b) => b.cost - a.cost)
+    } else if (selected == 4) {
+        products.sort((a, b) => a.added - b.added)
+    } else if (selected == 5) {
+        products.sort((a, b) => b.added - a.added)
     }
 
     console.log(products)
