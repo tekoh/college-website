@@ -17,6 +17,10 @@ body {
     height: 150vh;
 }
 
+main {
+    height: 150vh;
+}
+
 header {
     background-color: #181920;
     padding: 2rem;
@@ -34,11 +38,6 @@ header {
 
 .center {
     flex: 2;
-    order: 2;
-}
-
-.bigger-center {
-    flex: 4;
     order: 2;
 }
 
