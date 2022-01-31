@@ -68,7 +68,7 @@ const cards = [
                         <li>elimates dust from your floor</li>
                         <li><i>remember the time before you had pets?</i></li>
                     </ul>
-                    <img src="assets/roomba-1.png">
+                    <img src="assets/roomba.jpg">
                 </div>`,
     `<div class="card">
                     <h1>countdowns 📅</h1>
