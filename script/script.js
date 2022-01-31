@@ -113,7 +113,7 @@ function createCard(cardData) {
 
 $(window).on("load", function () {
 
-    const selected = $("#sort-by")
+    const selected = $("#sort-by").value
 
     console.log(selected)
 
