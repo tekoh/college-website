@@ -89,6 +89,7 @@ const cards = [
                 </div>`
 ]
 
+// converts the cards from json objects to html elements
 function createCard(cardData) {
     let card = '<div class="card">'
 
@@ -109,6 +110,12 @@ function createCard(cardData) {
     }
 
     card += "</div>"
+}
+
+function update() {
+    const selected = $("#sort-by").value
+
+    console.log(selected)
 }
 
 $(window).on("load", function () {
