@@ -62,13 +62,13 @@ function MStoTime(ms) {
 
 const cards = [
     `<div class="card">
-                    <h1>street racing 🚗</h1>
+                    <h1>Roomba</h1>
                     <ul>
-                        <li>race people for money</li>
-                        <li>collect cars</li>
-                        <li><i>wish you were back in the 2000s</i></li>
+                        <li>automatic cleaning</li>
+                        <li>elimates dust from your floor</li>
+                        <li><i>remember the time before you had pets?</i></li>
                     </ul>
-                    <img src="content/streetrace-1.png">
+                    <img src="assets/roomba-1.png">
                 </div>`,
     `<div class="card">
                     <h1>countdowns 📅</h1>
