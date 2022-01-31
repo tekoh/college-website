@@ -16,7 +16,7 @@ function submit(e) {
 
 // continiously updates message at bottom of screen showing how long until shop opens
 $(window).on("load", () => {
-    $("body").removeClass("preload")
+    update()
 
     if (!$("#countdown-text")[0]) return
 
@@ -116,21 +116,16 @@ function update() {
     const selected = $("#sort-by").val()
 
     console.log(selected)
-}
 
-$(window).on("load", function () {
+    let sorted
 
-    const selected = $("#sort-by").val()
-
-    console.log(selected)
-
-    const d = cards.length
-
-    for (let i = 0; i < d; i++) {
-        const chosen = cards[Math.floor(Math.random() * cards.length)]
-
-        cards.splice(cards.indexOf(chosen), 1)
-
-        $(".products").append(chosen)
+    if (selected == 2) {
+        sorted = products.sort((a, b) => a - b)
     }
-})
+
+    for (let product of sorted) {
+        const card = createCard(product)
+
+        $(".products").append(card)
+    }
+}
