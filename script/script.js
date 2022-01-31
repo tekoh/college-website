@@ -1,4 +1,4 @@
-function hey(e) {
+function submit(e) {
     e.preventDefault()
     const email = e.target.elements.email.value
     console.log(`given email: ${email}`)
