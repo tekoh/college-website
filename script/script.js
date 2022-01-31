@@ -120,7 +120,7 @@ function update() {
 
 $(window).on("load", function () {
 
-    const selected = $("#sort-by").options[$("#sort-by").selectedIndex].value
+    //const selected = $("#sort-by").options[$("#sort-by").selectedIndex].value
 
     console.log($("#sort-by").options)
 
