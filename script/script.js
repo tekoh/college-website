@@ -117,15 +117,13 @@ function update() {
 
     console.log(selected)
 
-    let sorted
-
     if (selected == 2) {
-        sorted = products.sort((a, b) => a.cost - b.cost)
+        products.sort((a, b) => a.cost - b.cost)
     }
 
-    console.log(sorted)
+    console.log(products)
 
-    for (let product of sorted) {
+    for (let product of products) {
         const card = createCard(product)
 
         $(".products").append(card)
