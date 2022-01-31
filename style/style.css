@@ -103,7 +103,7 @@ header {
     margin: 2rem
 }
 
-h2 .subtitle {
+.subtitle h2 {
     margin: 0rem !important;
     display: block;
 }
