@@ -14,13 +14,14 @@ function submit(e) {
     }
 }
 
+// continiously updates message at bottom of screen showing how long until shop opens
 $(window).on("load", () => {
     $("body").removeClass("preload")
 
     if (!$("#countdown-text")[0]) return
 
     const countdown = () => {
-        $("#countdown-text")[0].innerText = `${MStoTime(new Date(Date.parse("25/05/2003")) - Date.now())} until shop opening!`
+        $("#countdown-text")[0].innerText = `${MStoTime(new Date(Date.parse("25/05/2003")).getTime() - Date.now())} until shop opening!`
     }
 
     countdown()
