@@ -123,6 +123,8 @@ function update() {
         sorted = products.sort((a, b) => a - b)
     }
 
+    console.log(sorted)
+
     for (let product of sorted) {
         const card = createCard(product)
 
