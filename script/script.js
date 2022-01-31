@@ -109,6 +109,10 @@ function createCard(cardData) {
         card += `<img src="${cardData.img}">`
     }
 
+    if (cardDatta.cost) {
+        card += `<p>£${cost - 0.01}</p>`
+    }
+
     card += "</div>"
 
     return card
