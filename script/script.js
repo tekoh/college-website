@@ -60,81 +60,24 @@ function MStoTime(ms) {
     return output
 }
 
+const products = [
+    {
+        name: "Roomba",
+        description: ["automatic cleaning", "elimates dust from your floor", "<i>remember the time before you had pets?</i>"],
+        img: "assets/roomba.jpg",
+        cost: 300,
+        added: 1643627657
+    },
+    {
+        name: "Vector",
+        description: ["playful little robot", "ai powered", "<i>your dog might eat him ):</i>"],
+        img: "assets/anki.jpg",
+        cost: 750,
+        added: 1643627743
+    }
+]
+
 const cards = [
-    `<div class="card">
-                    <h1>Roomba</h1>
-                    <ul>
-                        <li>automatic cleaning</li>
-                        <li>elimates dust from your floor</li>
-                        <li><i>remember the time before you had pets?</i></li>
-                    </ul>
-                    <img src="assets/roomba.jpg">
-                </div>`,
-    `<div class="card">
-                    <h1>countdowns 📅</h1>
-                    <ul>
-                        <li>countdown to events</li>
-                        <li>customisable messages</li>
-                        <li><i>time machine not included</i> 😔</li>
-                    </ul>
-                    <img src="content/countdown-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>minecraft ⛏</h1>
-                    <ul>
-                        <li>view name history for minecraft accounts</li>
-                        <li>view skins for minecraft accounts</li>
-                        <li><i>best game to ever be made</i> 🙏</li>
-                    </ul>
-                    <img src="content/minecraft-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>chat reactions 🗣</h1>
-                    <ul>
-                        <li>use a custom word list</li>
-                        <li>tracks statistics</li>
-                        <li>can be started randomly</li>
-                        <li><i>fastest typer wins</i> 😏</li>
-                    </ul>
-                    <img src="content/chatreaction-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>christmas countdown 🎅</h1>
-                    <ul>
-                        <li>can run all year round</li>
-                        <li>customisable message</li>
-                        <li><i>santa exists</i> 🥺</li>
-                    </ul>
-                    <img src="content/christmas-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>mention history 💬</h1>
-                    <ul>
-                        <li>view ghost pings</li>
-                        <li>stores up to 15 mentions</li>
-                        <li><i>for the famous people</i></li>
-                    </ul>
-                    <img src="content/mentions-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>inventory system 🎒</h1>
-                    <ul>
-                        <li>collect cars for street races</li>
-                        <li>use items to bully others</li>
-                        <li><i>check out the handcuffs</i> 😏</li>
-                    </ul>
-                    <img src="content/inventory-1.png">
-                </div>`,
-    `<div class="card">
-                    <h1>cryptocurrency 🪙</h1>
-                    <ul>
-                        <li>updates to real life value</li>
-                        <li>virtual investments</li>
-                        <li>currently uses bitcoin and ethereum</li>
-                        <li><i>doge to the moon</i> 🌙</li>
-                    </ul>
-                    <img src="content/bitcoin-1.png">
-                </div>`,
     `<div class="card">
                     <h1>prestige system 🤑</h1>
                     <ul>
@@ -146,7 +89,34 @@ const cards = [
                 </div>`
 ]
 
+function createCard(cardData) {
+    let card = '<div class="card">'
+
+    if (cardData.name) {
+        card += `<h1>${cardData.name}</h1>`
+    }
+
+    if (cardData.description) {
+        card += "<ul>"
+        for (let item of cardData.description) {
+            card += `<li>${item}</li>`
+        }
+        card += "</ul>"
+    }
+
+    if (cardData.img) {
+        card += `<img src="${cardData.img}">`
+    }
+
+    card += "</div>"
+}
+
 $(window).on("load", function () {
+
+    const selected = $("#sort-by")
+
+    console.log(selected)
+
     const d = cards.length
 
     for (let i = 0; i < d; i++) {
