@@ -103,6 +103,11 @@ header {
     margin: 2rem
 }
 
+h2 .subtitle {
+    margin: 0rem !important;
+    display: block;
+}
+
 .red {
     color: red;
 }
