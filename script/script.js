@@ -115,7 +115,7 @@ function createCard(cardData) {
 }
 
 function update() {
-    $(".products").innerHtml = ""
+    $(".products").empty()
     const selected = $("#sort-by").val()
 
     console.log(selected)
@@ -125,9 +125,9 @@ function update() {
     } else if (selected == 3) {
         products.sort((a, b) => b.cost - a.cost)
     } else if (selected == 4) {
-        products.sort((a, b) => a.added - b.added)
-    } else if (selected == 5) {
         products.sort((a, b) => b.added - a.added)
+    } else if (selected == 5) {
+        products.sort((a, b) => a.added - b.added)
     }
 
     console.log(products)
