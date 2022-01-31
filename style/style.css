@@ -14,7 +14,7 @@ body {
     /* min-height: 100%;
     min-width: 100%; */
     background-color: #1c1e26;
-    overflow: scroll;
+    height: 120vh;
 }
 
 main {
