@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&display=swap');
 
+/* default values making developent easier */
 * {
     text-decoration: none;
     margin: 0rem;
@@ -8,6 +9,7 @@
     scroll-behavior: smooth;
 }
 
+/* sets background colour */
 body {
     /* min-height: 100%;
     min-width: 100%; */
@@ -39,6 +41,7 @@ header {
     order: 3;
 }
 
+/* styling for the title */
 .title {
     font-family: "Roboto Mono", monospace;
     font-size: 4rem;
@@ -56,6 +59,7 @@ header {
     text-align: center;
 }
 
+/* center items inside these classes */
 .center-children {
     display: flex;
     justify-content: center;
@@ -84,6 +88,7 @@ header {
     text-decoration: underline;
 }
 
+/* styling for subtitles, font size, family etc */
 .subtitle {
     font-size: 3rem;
     font-family: 'Roboto';
@@ -114,14 +119,17 @@ header {
     text-align: center;
 }
 
+/* container for flex */
 .flex-container {
     display: flex;
 }
 
+/* puts flex items in a column */
 .column {
     flex-direction: column;
 }
 
+/* input formatting */
 input, textarea {
     outline: none;
     font-size: 1rem;
@@ -158,4 +166,17 @@ hr {
     font-weight: 300;
     text-align: center;
     color: #BBBBBB;
+}
+
+.countdown {
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    padding: 1rem;
+
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -30%);
+    margin: 0 auto;
 }
