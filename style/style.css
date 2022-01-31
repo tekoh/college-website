@@ -168,6 +168,7 @@ hr {
     color: #BBBBBB;
 }
 
+/* formatting for the countdown at the bottom of each page */
 .countdown {
     font-size: 1rem;
     font-family: "Roboto Mono", monospace;
@@ -180,4 +181,25 @@ hr {
     top: 95%;
     transform: translate(-50%, -30%);
     margin: 0 auto;
+}
+
+.products-header {
+    width: 100%;
+}
+
+#sort-by {
+    float: right;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Roboto Mono';
+    border: 2px solid #1c1e26;
+    padding: 0.3rem;
+    transition: 0.5s ease-out;
+    background-color: rgb(20, 21, 28);
+    color: #BBBBBB;
+    border-radius: 0.5rem;
+}
+
+#sort-by:focus {
+    border: 2px solid #ff5656;
 }
