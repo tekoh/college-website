@@ -110,7 +110,7 @@ function createCard(cardData) {
     }
 
     if (cardData.cost) {
-        card += `<p>£${cost - 0.01}</p>`
+        card += `<p>£${cardData.cost - 0.01}</p>`
     }
 
     card += "</div>"
