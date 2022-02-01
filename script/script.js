@@ -3,6 +3,7 @@ function submit(e) {
     const email = e.target.elements.email.value
     console.log(`given email: ${email}`)
 
+    // email regex
     const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
 
     const match = email.match(regex)
@@ -60,6 +61,7 @@ function MStoTime(ms) {
     return output
 }
 
+// list of product items as objects.
 const products = [
     {
         name: "Roomba",
@@ -74,19 +76,28 @@ const products = [
         img: "assets/anki.jpg",
         cost: 750,
         added: 1643627743
+    },
+    {
+        name: "Thermomix",
+        description: ["create your perfect meals", "built-in instruction system", "<i>literally foolproof</i>"],
+        img: "assets/thermomix.jpg",
+        cost: 1500,
+        added: 1643707175
+    },
+    {
+        name: "Nanoleaf lightstrip",
+        description: ["start your smart home", "the best mood lighting", "<i>automatic lighting with apple homekit</i>"],
+        img: "assets/nanoleaf-1.jpg",
+        cost: 50,
+        added: 1643708416
+    },
+    {
+        name: "Apple Homepod mini",
+        description: ["connect with your smart home", "fill the house with music", "<i>control the lighting with your voice 😳</i>"],
+        img: "assets/homepod.jpg",
+        cost: 80,
+        added: 1643708562
     }
-]
-
-const cards = [
-    `<div class="card">
-                    <h1>prestige system 🤑</h1>
-                    <ul>
-                        <li>powerful rewards for prestiging</li>
-                        <li>increases rewards for voting</li>
-                        <li><i>seasonal economy</i> 😳</li>
-                    </ul>
-                    <img src="content/prestige-1.png">
-                </div>`
 ]
 
 // converts the cards from json objects to html elements
@@ -118,6 +129,7 @@ function createCard(cardData) {
     return card
 }
 
+// this is called everytime the products need to be updated. it sorts the products and adds them to the document with jquery
 function update() {
     $(".products").empty()
     const selected = $("#sort-by").val()
